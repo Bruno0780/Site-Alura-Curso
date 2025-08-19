@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turismo Sustentável</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      color: black;
+      transition: all 0.3s ease;
+    }
+    header {
+      background: #2e7d32;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin: 15px 0;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 30px;
+    }
+    /* Acessibilidade */
+    .alto-contraste {
+      background: black !important;
+      color: yellow !important;
+    }
+    .alto-contraste header {
+      background: yellow !important;
+      color: black !important;
+    }
+    .alto-contraste footer {
+      background: yellow !important;
+      color: black !important;
+    }
+    .maior-fonte {
+      font-size: 1.2em;
+    }
+    .botao-acessibilidade {
+      margin: 5px;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Turismo Sustentável</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#dicas">Dicas</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div>
+      <button class="botao-acessibilidade" onclick="toggleContraste()">Alto Contraste</button>
+      <button class="botao-acessibilidade" onclick="toggleFonte()">Aumentar Fonte</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="sobre">
+      <h2>O que é Turismo Sustentável?</h2>
+      <p>O turismo sustentável busca equilibrar lazer, economia e preservação ambiental. A ideia é viajar de forma consciente, respeitando a natureza e as comunidades locais.</p>
+      <p>Praticar o turismo sustentável significa valorizar a cultura, preservar os recursos naturais e reduzir impactos negativos durante as viagens.</p>
+    </section>
+
+    <section id="dicas">
+      <h2>Dicas de Viagem Sustentável</h2>
+      <ul>
+        <li>Prefira meios de transporte coletivos ou bicicletas.</li>
+        <li>Leve sua própria garrafa reutilizável para reduzir o uso de plástico.</li>
+        <li>Respeite a cultura local e apoie pequenos negócios da região.</li>
+        <li>Escolha hospedagens que tenham práticas ambientais responsáveis.</li>
+      </ul>
+    </section>
+
+    <section id="galeria">
+      <h2>Galeria</h2>
+      <p>Alguns destinos que inspiram a prática do turismo sustentável:</p>
+      <img src="https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg" alt="Trilha em floresta com pessoas caminhando">
+      <img src="https://images.pexels.com/photos/460775/pexels-photo-460775.jpeg" alt="Bicicletas em cidade sustentável">
+      <img src="https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg" alt="Vista de uma praia limpa e preservada">
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Quer saber mais sobre turismo sustentável? Envie uma mensagem para:  
+      <a href="mailto:contato@turismosustentavel.com">café@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Turismo Sustentável | Imagens: Pexels (Creative Commons)</p>
+  </footer>
+
+  <script>
+    function toggleContraste() {
+      document.body.classList.toggle("alto-contraste");
+    }
+    function toggleFonte() {
+      document.body.classList.toggle("maior-fonte");
+    }
+  </script>
+</body>
+</html>
